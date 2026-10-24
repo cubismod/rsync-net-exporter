@@ -1,5 +1,5 @@
 # Install uv
-FROM python:3.12-slim
+FROM python:3.15-slim@sha256:533b0b2f9b5d46fd097091cf826f27902f1d6c3bca714b6dc74551356aa97a51
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 
 # Change the working directory to the `app` directory
